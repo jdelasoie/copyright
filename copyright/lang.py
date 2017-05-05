@@ -184,7 +184,7 @@ class JavaLang(Lang):
 class PyLang(Lang):
     def __init__(self):
         super(PyLang, self).__init__('py', ['py'],
-            start="'''", stop="'''", single='#',
+            start='"""', stop='"""', single='#',
             keywords=['#!.*python.*', '^from ', '^import .*[^;]$', "^''' ", '^""" '])
 
 class ShLang(Lang):
